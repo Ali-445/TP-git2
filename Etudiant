@@ -6,6 +6,7 @@ public class Etudiant {
     private int matricule;
     private double moyenne;
     private String specialite;
+    private int age;
     
     public Etudiant(String nom, String prenom, int matricule, String specialite) {
         this.nom = nom;
@@ -13,8 +14,13 @@ public class Etudiant {
         this.matricule = matricule;
         this.specialite = specialite;
         this.moyenne = 0.0;
+        this.age = 0;
     }
     
+    public int getAge() {
+        return age;
+    }
+
     public String getNom() {
         return nom;
     }
@@ -54,6 +60,10 @@ public class Etudiant {
     public void setSpecialite(String specialite) {
         this.specialite = specialite;
     }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
     
     @Override
     public String toString() {
@@ -63,6 +73,8 @@ public class Etudiant {
                 ", matricule=" + matricule +
                 ", moyenne=" + moyenne +
                 ", specialite='" + specialite + '\'' +
+                ", age=" + age +
+
                 '}';
     }
 }
