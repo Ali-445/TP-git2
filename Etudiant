@@ -74,7 +74,6 @@ public class Etudiant {
                 ", moyenne=" + moyenne +
                 ", specialite='" + specialite + '\'' +
                 ", age=" + age +
-
                 '}';
     }
 }
