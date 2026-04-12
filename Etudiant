@@ -6,15 +6,107 @@ public class Etudiant {
     private int matricule;
     private double moyenne;
     private String specialite;
+    private int age;
     
+    public Etudiant(String nom, String Prenom, int matricule, String specialite) {
+        this.nom = nom;
+        this.Prenom = Prenom;
     public Etudiant(String Nom, String preNom, int matricule, String specialite) {
         this.Nom = Nom;
         this.preNom = preNom;
         this.matricule = matricule;
         this.specialite = specialite;
         this.moyenne = 0.0;
+        this.age = 0;
     }
     
+    public int getAge() {
+        return age;
+    }
+
+    public String getNom() {
+        return Nom;
+    }
+    
+    public void setNom(String Nom) {
+        this.Nom = Nom;
+    }
+    
+    public String getPrenom() {
+        return Prenom;
+    }
+    
+    public void setPrenom(String Prenom) {
+        this.Prenom = Prenom;
+    }
+    
+    public int getMatricule() {
+        return matricule;
+    }
+    
+    public void setMatricule(int matricule) {
+        this.matricule = matricule;
+    }
+    
+    public double getMoyenne() {
+        return moyenne;
+    }
+    
+    public void setMoyenne(double moyenne) {
+        this.moyenne = moyenne;
+    }
+    
+    public String getSpecialite() {
+        return specialite;
+    }
+    
+    public void setSpecialite(String specialite) {
+        this.specialite = specialite;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+    @Override
+    public String toString() {
+        return "Etudiant{" +
+                "nom='" + nom + '\'' +
+                ", Prenom='" + Prenom + '\'' +
+                ", matricule=" + matricule +
+                ", moyenne=" + moyenne +
+                ", specialite='" + specialite + '\'' +
+                ", age=" + age +
+
+                '}';
+    }
+
+    
+}
+
+
+
+public class Etudiant {
+    private String nom;
+    private String prenom;
+    private int matricule;
+    private double moyenne;
+    private String specialite;
+    private int age;
+    
+    public Etudiant(String nom, String prenom, int matricule, String specialite) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.matricule = matricule;
+        this.specialite = specialite;
+        this.moyenne = 0.0;
+        this.age = 0;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+
     public String getNom() {
         return Nom;
     }
@@ -54,6 +146,10 @@ public class Etudiant {
     public void setSpecialite(String specialite) {
         this.specialite = specialite;
     }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
     
     @Override
     public String toString() {
@@ -63,6 +159,7 @@ public class Etudiant {
                 ", matricule=" + matricule +
                 ", moyenne=" + moyenne +
                 ", specialite='" + specialite + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
