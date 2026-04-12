@@ -1,16 +1,16 @@
 
 
 public class Etudiant {
-    private String nom;
-    private String prenom;
+    private String Nom;
+    private String Prenom;
     private int matricule;
     private double moyenne;
     private String specialite;
     private int age;
     
-    public Etudiant(String nom, String prenom, int matricule, String specialite) {
+    public Etudiant(String nom, String Prenom, int matricule, String specialite) {
         this.nom = nom;
-        this.prenom = prenom;
+        this.Prenom = Prenom;
         this.matricule = matricule;
         this.specialite = specialite;
         this.moyenne = 0.0;
@@ -30,11 +30,11 @@ public class Etudiant {
     }
     
     public String getPrenom() {
-        return prenom;
+        return Prenom;
     }
     
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setPrenom(String Prenom) {
+        this.Prenom = Prenom;
     }
     
     public int getMatricule() {
@@ -69,7 +69,7 @@ public class Etudiant {
     public String toString() {
         return "Etudiant{" +
                 "nom='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
+                ", Prenom='" + Prenom + '\'' +
                 ", matricule=" + matricule +
                 ", moyenne=" + moyenne +
                 ", specialite='" + specialite + '\'' +
@@ -85,15 +85,15 @@ public class Etudiant {
 
 public class Etudiant {
     private String nom;
-    private String prenom;
+    private String Prenom;
     private int matricule;
     private double moyenne;
     private String specialite;
     private int age;
     
-    public Etudiant(String nom, String prenom, int matricule, String specialite) {
+    public Etudiant(String nom, String Prenom, int matricule, String specialite) {
         this.nom = nom;
-        this.prenom = prenom;
+        this.Prenom = Prenom;
         this.matricule = matricule;
         this.specialite = specialite;
         this.moyenne = 0.0;
@@ -113,11 +113,11 @@ public class Etudiant {
     }
     
     public String getPrenom() {
-        return prenom;
+        return Prenom;
     }
     
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setPrenom(String Prenom) {
+        this.Prenom = Prenom;
     }
     
     public int getMatricule() {
@@ -152,7 +152,7 @@ public class Etudiant {
     public String toString() {
         return "Etudiant{" +
                 "username='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
+                ", Prenom='" + Prenom + '\'' +
                 ", matricule=" + matricule +
                 ", moyenne=" + moyenne +
                 ", specialite='" + specialite + '\'' +
