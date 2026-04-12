@@ -1,34 +1,34 @@
 
 
 public class Etudiant {
-    private String nom;
-    private String prenom;
+    private String Nom;
+    private String preNom;
     private int matricule;
     private double moyenne;
     private String specialite;
     
-    public Etudiant(String nom, String prenom, int matricule, String specialite) {
-        this.nom = nom;
-        this.prenom = prenom;
+    public Etudiant(String Nom, String preNom, int matricule, String specialite) {
+        this.Nom = Nom;
+        this.preNom = preNom;
         this.matricule = matricule;
         this.specialite = specialite;
         this.moyenne = 0.0;
     }
     
     public String getNom() {
-        return nom;
+        return Nom;
     }
     
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNom(String Nom) {
+        this.Nom = Nom;
     }
     
-    public String getPrenom() {
-        return prenom;
+    public String getPreNom() {
+        return preNom;
     }
     
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
+    public void setPreNom(String preNom) {
+        this.preNom = preNom;
     }
     
     public int getMatricule() {
@@ -58,8 +58,8 @@ public class Etudiant {
     @Override
     public String toString() {
         return "Etudiant{" +
-                "username='" + nom + '\'' +
-                ", prenom='" + prenom + '\'' +
+                "username='" + Nom + '\'' +
+                ", preNom='" + preNom + '\'' +
                 ", matricule=" + matricule +
                 ", moyenne=" + moyenne +
                 ", specialite='" + specialite + '\'' +
