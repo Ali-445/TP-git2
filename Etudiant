@@ -3,17 +3,26 @@
 public class Etudiant {
     private String Nom;
     private String preNom;
+    private int Matricule;
+    private double moyenne;
+    private String specialite;
+    private int Age;
     private int matricule;
     private double Moyenne;
     private String Specialite;
     private int age;
     
+    public Etudiant(String nom, String Prenom, int Matricule, String specialite) {
     public Etudiant(String nom, String Prenom, int matricule, String Specialite) {
         this.nom = nom;
         this.Prenom = Prenom;
-    public Etudiant(String Nom, String preNom, int matricule, String specialite) {
+    public Etudiant(String Nom, String preNom, int Matricule, String specialite) {
         this.Nom = Nom;
         this.preNom = preNom;
+        this.Matricule = Matricule;
+        this.specialite = specialite;
+        this.moyenne = 0.0;
+        this.Age = 0;
         this.matricule = matricule;
         this.Specialite = Specialite;
         this.Moyenne = 0.0;
@@ -21,7 +30,7 @@ public class Etudiant {
     }
     
     public int getAge() {
-        return age;
+        return Age;
     }
 
     public String getNom() {
@@ -41,11 +50,11 @@ public class Etudiant {
     }
     
     public int getMatricule() {
-        return matricule;
+        return Matricule;
     }
     
-    public void setMatricule(int matricule) {
-        this.matricule = matricule;
+    public void setMatricule(int Matricule) {
+        this.Matricule = Matricule;
     }
     
     public double getMoyenne() {
@@ -64,8 +73,8 @@ public class Etudiant {
         this.Specialite = Specialite;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int Age) {
+        this.Age = Age;
     }
     
     @Override
@@ -73,6 +82,10 @@ public class Etudiant {
         return "Etudiant{" +
                 "nom='" + nom + '\'' +
                 ", Prenom='" + Prenom + '\'' +
+                ", Matricule=" + Matricule +
+                ", moyenne=" + moyenne +
+                ", specialite='" + specialite + '\'' +
+                ", Age=" + Age +
                 ", matricule=" + matricule +
                 ", Moyenne=" + Moyenne +
                 ", Specialite='" + Specialite + '\'' +
@@ -89,14 +102,23 @@ public class Etudiant {
 public class Etudiant {
     private String nom;
     private String prenom;
+    private int Matricule;
+    private double moyenne;
+    private String specialite;
+    private int Age;
     private int matricule;
     private double Moyenne;
     private String Specialite;
     private int age;
     
+    public Etudiant(String nom, String prenom, int Matricule, String specialite) {
     public Etudiant(String nom, String Prenom, int matricule, String Specialite) {
         this.nom = nom;
         this.prenom = prenom;
+        this.Matricule = Matricule;
+        this.specialite = specialite;
+        this.moyenne = 0.0;
+        this.Age = 0;
         this.matricule = matricule;
         this.Specialite = Specialite;
         this.Moyenne = 0.0;
@@ -104,7 +126,7 @@ public class Etudiant {
     }
     
     public int getAge() {
-        return age;
+        return Age;
     }
 
     public String getNom() {
@@ -124,11 +146,11 @@ public class Etudiant {
     }
     
     public int getMatricule() {
-        return matricule;
+        return Matricule;
     }
     
-    public void setMatricule(int matricule) {
-        this.matricule = matricule;
+    public void setMatricule(int Matricule) {
+        this.Matricule = Matricule;
     }
     
     public double getMoyenne() {
@@ -147,8 +169,8 @@ public class Etudiant {
         this.Specialite = Specialite;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int Age) {
+        this.Age = Age;
     }
     
     @Override
@@ -156,6 +178,10 @@ public class Etudiant {
         return "Etudiant{" +
                 "username='" + Nom + '\'' +
                 ", preNom='" + preNom + '\'' +
+                ", Matricule=" + Matricule +
+                ", moyenne=" + moyenne +
+                ", specialite='" + specialite + '\'' +
+                ", Age=" + Age +
                 ", matricule=" + matricule +
                 ", Moyenne=" + Moyenne +
                 ", Specialite='" + Specialite + '\'' +
