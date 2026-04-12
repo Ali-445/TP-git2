@@ -4,19 +4,19 @@ public class Etudiant {
     private String Nom;
     private String preNom;
     private int matricule;
-    private double moyenne;
-    private String specialite;
+    private double Moyenne;
+    private String Specialite;
     private int age;
     
-    public Etudiant(String nom, String Prenom, int matricule, String specialite) {
+    public Etudiant(String nom, String Prenom, int matricule, String Specialite) {
         this.nom = nom;
         this.Prenom = Prenom;
     public Etudiant(String Nom, String preNom, int matricule, String specialite) {
         this.Nom = Nom;
         this.preNom = preNom;
         this.matricule = matricule;
-        this.specialite = specialite;
-        this.moyenne = 0.0;
+        this.Specialite = Specialite;
+        this.Moyenne = 0.0;
         this.age = 0;
     }
     
@@ -49,19 +49,19 @@ public class Etudiant {
     }
     
     public double getMoyenne() {
-        return moyenne;
+        return Moyenne;
     }
     
-    public void setMoyenne(double moyenne) {
-        this.moyenne = moyenne;
+    public void setMoyenne(double Moyenne) {
+        this.Moyenne = Moyenne;
     }
     
     public String getSpecialite() {
-        return specialite;
+        return Specialite;
     }
     
-    public void setSpecialite(String specialite) {
-        this.specialite = specialite;
+    public void setSpecialite(String Specialite) {
+        this.Specialite = Specialite;
     }
 
     public void setAge(int age) {
@@ -74,8 +74,8 @@ public class Etudiant {
                 "nom='" + nom + '\'' +
                 ", Prenom='" + Prenom + '\'' +
                 ", matricule=" + matricule +
-                ", moyenne=" + moyenne +
-                ", specialite='" + specialite + '\'' +
+                ", Moyenne=" + Moyenne +
+                ", Specialite='" + Specialite + '\'' +
                 ", age=" + age +
 
                 '}';
@@ -90,16 +90,16 @@ public class Etudiant {
     private String nom;
     private String prenom;
     private int matricule;
-    private double moyenne;
-    private String specialite;
+    private double Moyenne;
+    private String Specialite;
     private int age;
     
-    public Etudiant(String nom, String prenom, int matricule, String specialite) {
+    public Etudiant(String nom, String Prenom, int matricule, String Specialite) {
         this.nom = nom;
         this.prenom = prenom;
         this.matricule = matricule;
-        this.specialite = specialite;
-        this.moyenne = 0.0;
+        this.Specialite = Specialite;
+        this.Moyenne = 0.0;
         this.age = 0;
     }
     
@@ -132,19 +132,19 @@ public class Etudiant {
     }
     
     public double getMoyenne() {
-        return moyenne;
+        return Moyenne;
     }
     
-    public void setMoyenne(double moyenne) {
-        this.moyenne = moyenne;
+    public void setMoyenne(double Moyenne) {
+        this.Moyenne = Moyenne;
     }
     
     public String getSpecialite() {
-        return specialite;
+        return Specialite;
     }
     
-    public void setSpecialite(String specialite) {
-        this.specialite = specialite;
+    public void setSpecialite(String Specialite) {
+        this.Specialite = Specialite;
     }
 
     public void setAge(int age) {
@@ -157,8 +157,8 @@ public class Etudiant {
                 "username='" + Nom + '\'' +
                 ", preNom='" + preNom + '\'' +
                 ", matricule=" + matricule +
-                ", moyenne=" + moyenne +
-                ", specialite='" + specialite + '\'' +
+                ", Moyenne=" + Moyenne +
+                ", Specialite='" + Specialite + '\'' +
                 ", age=" + age +
                 '}';
     }
